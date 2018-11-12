@@ -1,0 +1,169 @@
+body    {
+            margin: 0; 
+            border: 0; 
+            padding: 0; 
+            background: #ccc;
+        }
+        
+#header { 
+            margin: 0; 
+            border: 0; 
+            padding: 0 1em; 
+            background: #036; 
+            color: #fff; 
+            text-align: center; 
+            overflow: auto;  
+        }
+
+#mobile_menu_button 
+    { 
+        margin: 0; 
+        border: 0; 
+        padding: 1em 0 1em 0;  
+        background: #69c; 
+        color: #fff; 
+        text-align: center; 
+        overflow: auto; 
+        display: block; 
+    }
+#mobile_menu_button a:link, #mobile_menu_button a:visited 
+    { 
+        color: #fff; 
+    }
+
+#mobile_menu_button a:hover, #mobile_menu_button a:active 
+    { 
+        color: #000; 
+    }
+
+        
+#menu   {
+            margin:0; 
+            border:0; 
+            padding: 0; 
+            width: 100%; 
+            background: #69c; 
+            display: none; 
+            clear:both; 
+            overflow: auto;
+        }
+
+#menu ul { 
+            margin: 0; 
+            border: 0; 
+            padding: 0; 
+            width: 100%; 
+        }
+            
+#menu li {
+            margin: 0; 
+            border-style: solid; 
+            border-width: 1px 0 0 0; 
+            border-color: #fff; 
+            padding: 0; 
+            width: 100%; 
+            display: block; 
+            text-align: center; 
+            list-style-type: none; 
+            font-family: Verdana, Helvetica, Arial, sans-serif;  
+        }
+            
+#menu a:link, #menu a:visited 
+        {
+            margin: 0; 
+            border: 0; 
+            padding: 10px 0; 
+            display: block; 
+            text-decoration: none; 
+            background: #69c; 
+            color: #333;
+        }
+            
+#menu a:hover, #menu a:active 
+        {
+            background: #eee; 
+            color: #666; 
+        }
+            
+#contentwrapper { 
+                    /* Default content1 and content2 are for a mobile device, */
+                    /* taking up the full width of the screen */
+                    overflow: auto; 
+                }
+
+#content1       { 
+                    margin: 0; 
+                    border: 0; 
+                    padding: 0 5%; 
+                    float: left; 
+                    width: 90%;  
+                }
+
+#content2   { 
+                margin: 0; 
+                border: 0; 
+                padding: 0 5%; 
+                float: left; 
+                width: 90%; 
+            }
+
+#footer         { 
+                    margin: 0; 
+                    border: 0; 
+                    padding: 0 1em; 
+                    background: #036; 
+                    color: #fff; 
+                    text-align: center; 
+                    overflow: auto; 
+                }
+
+#footer a:link, #footer a:visited 
+                { 
+                    color: #fff; 
+                }
+#footer a:hover, #footer a:active 
+                { 
+                    color: #999; 
+                }
+                            
+.container  {
+                /* Padding will be added to sides as necessary */
+                margin: auto; 
+                max-width: 800px; 
+            } 
+
+/* desktop display, for large-width desktop-sized display, all the way down to 600px wide*/
+@media (min-width: 600px) { 
+    body        { 
+                    font-size: 110%; 
+                }
+    #header h1  {
+                    font-size: 180%; 
+                }
+    #mobile_menu_button {
+                    display: none; 
+                } 
+    #menu   {
+                    display: block; 
+                    width: 100%; 
+                    background: #69c; 
+            }
+    #menu li {
+                    border-width: 0; 
+                    width: 25%; 
+                    float: left; }
+                          
+    #content1   {   
+                    /* places two content containers side by side */
+                    padding: 2%; 
+                    width: 46%; 
+                    float: left; 
+                } 
+    #content2   { 
+                    padding: 2%; width: 46%; float: left; 
+                }
+    .mobile_hide { 
+                    /* Allows the display of elements otherwise suppressed */
+                    display: block; 
+                }            
+}

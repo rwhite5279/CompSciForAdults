@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Intro to Computer Science and Computer Programming - Lesson 4</title>
+    	<meta name="resource-type" content="document" />
+    	<meta name="author" content="richard white" />
+    	<meta name="description" content="Web pages for Polytechnic School's AP Computer Science A course" />
+    	<meta name="keywords" content="Richard White, Polytechnic School, Computer Science, Computer Programming" />
+    	<meta name="distribution" content="global" />
+    	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" type="text/css" href="styles_cs4a.css">
+    	<script src="./showHide.js" type="text/javascript"></script>
+    </head>
+    <body>
+    
+        <!-- ********************************************************************** -->
+        
+        <div id="header">
+            <div class="container">
+                <a href="index.html"><h1>Intro to Computer Science &amp; Computer Programming</h1></a>
+            </div>
+        </div>
+        
+        <!-- ********************************************************************** -->
+        
+        <div id="mobile_menu_button"><a href="#" onclick="toggle('menu');">Menu &#9776;</a></div>
+
+        <!-- ********************************************************************** -->
+        <div id="menu" class="toggle">
+            <div class="container">
+                <ul>
+                    <li><a href="lesson1.html">Lesson 1</a></li>
+                    <li><a href="lesson2.html">Lesson 2</a></li>
+                    <li><a href="lesson3.html">Lesson 3</a></li>
+                    <li id="here">Lesson 4</li>
+                    <li><a href="lesson5.html">Lesson 5</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- ********************************************************************** -->
+        
+        <div id="contentwrapper">
+            <div class="container">
+                <h1>Lesson 4<br />
+                    The World Wide Web; Living Online
+                </h1>
+                
+                <h2>Overview</h2>
+                <ol>
+                    <li><b>Computer Science</b>:  --</li>
+                    <li><b>Coding</b>: WWW, HTML/CSS</li>
+                    <li><b>Culture</b>: Social Media, Privacy and Security</li>
+                </ol>
+                
+                <h2>Schedule</h2>
+                <ol>
+                    <li>Review of Week 3</li>
+                    <li>The Internet - <a href="https://www.youtube.com/watch?v=7_LPdttKXPc">How the Internet Works in 5 Minutes</a> [YouTube]</li>
+
+                    <li>The World Wide Web
+                        <ul>
+                            <li>Servers - <a href="https://www.youtube.com/watch?v=XZmGGAbHqa0">Inside a Google data center</a> [YouTube, 5 min]</li>
+                            <li>Browsers - Firefox, Safari, Chrome...</li>
+                        </ul></li>
+                    <li>Websites, webpages
+                        <ul>
+                            <li>Websites constructed using a text editor</li>
+                            <li>Webpages viewed/tested in a browser</li>
+                            <li>Integrated Development Environments (IDE)</li>
+                            <li>Viewing webpage source code</li>
+                        </ul></li>
+                    <li>Intro to Hypertext Markup Language (HTML)
+                        <ol>
+                            <li>Markup language:  <span class="ilc">&lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</span></li>
+                            <li>Tags for pages:
+                            <ul>
+                                <li><span class="ilc">&lt;html&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/html&gt;</span></li>
+                                <li><span class="ilc">&lt;head&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</span></li>
+                                <li><span class="ilc">&lt;body&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</span></li>
+                            </ul></li>
+                            <li>Tags for text: 
+                            <ul>
+                                <li>Paragraphs: <span class="ilc">&lt;p&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;</span></li>
+                                <li>Emphasized (italicized): <span class="ilc">&lt;em&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/em&gt;</span></li>
+                                <li>Strong (bold): <span class="ilc">&lt;strong&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/strong&gt;</span></li>
+                                <li>Line break: <span class="ilc">&lt;br /&gt;</span></li>
+                                <li>Headers: <span class="ilc">&lt;h1&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;</span>, <span class="ilc">&lt;h2&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h2&gt;</span>, etc.</li>
+                                
+                            </ul></li>
+                            <li>Links:  <span class="ilc">&lt;a href=&quot;target URL&quot;&gt;link text&lt;/a&gt;</li>
+                            <li>Images:  <span class="ilc">&lt;img src=&quot;image_filename&quot;  /&gt;</li>
+                            <li>Logical Divisions: <span class="ilc">&lt;div&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</li>
+                        </ol></li>
+                        <li><span class="ilc"><a href="javascript:toggle('webpage1');">Write a webpage</a></span>
+                            <div id="webpage1" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Write your first webpage</h1>
+                                    <p>Download this <a href="code/website/template1.html">template1.html</a> file and modify it as you wish. Make sure that your page include fours <span class="ilc">div</span>s&mdash;header, menu, contentwrapper, and footer&mdash;and populate those divs with information as you wish.</p>
+                                </div>
+                            </div></li>
+            
+                    <li>Break</li>
+                    <li>Intro to Cascading Style Sheets (CSS)
+                        <ol>
+                            <li>Content vs. Presentation</li>
+                            <li>Three ways to indicate style: inline, in-header, css file</li>
+                            <li><span class="ilc"><a href="javascript:toggle('webpage2');">Modify your webpage</a></span>
+                            <div id="webpage2" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Modify your webpage</h1>
+                                    <p>Download this <a href="code/website/template2.html">template2.html</a> file and identify the lines that have been modified. Adjust your <span class="ilc">template1.html</span> file to match it where needed. You'll also need to download <a href="code/website/showHide.js">showHide.js</a> and <a href="code/website/styles.css">styles.css</a> and place those files in the same directory as your <span class="ilc">html</span> files for them to work.                                             </p>
+                                </div>
+                            </div></li>
+                            <li>Write additional webpages</li>
+                            <li>Upload to a server?</li>
+                        </ol></li>
+                    <li>Break</li>
+                    <li>Security and Encryption</li>
+                    <li>Privacy and Social Media
+                        <ul>
+                            <li><a href="https://www.npr.org/sections/thesalt/2018/09/29/643386327/no-cash-needed-at-this-cafe-students-pay-the-tab-with-their-personal-data">Pay for Coffee with your Personal Data</a> [NPR]</li>
+                        </ul></li>
+                    <li>Homework: Read <a href="https://www.nytimes.com/roomfordebate/2016/02/23/has-encryption-gone-too-far">Has Encryption Gone Too Far?</a>, research any recent security breach and come back prepared to tell us a little bit about it</li>
+                </ol>
+
+            </div><!--container -->            
+        </div>
+        
+        <!-- ********************************************************************** -->
+        
+        <div id="footer">
+            <div class="container">
+                <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0; width: 88px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Computer Science and Computer Programming</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.crashwhite.com/cs4a/" property="cc:attributionName" rel="cc:attributionURL">Richard White</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+            </div><!--container -->
+        </div>
+    </body>
+</html>

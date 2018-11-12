@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Intro to Computer Science and Computer Programming - Lesson 2</title>
+    	<meta name="resource-type" content="document" />
+    	<meta name="author" content="richard white" />
+    	<meta name="description" content="Introduction to Computer Science and Computer Programming for Adults" />
+    	<meta name="keywords" content="Richard White, Computer Science, Computer Programming, Adult Education, Tutorial, How to" /><meta name="distribution" content="global" />
+    	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" type="text/css" href="styles_cs4a.css">
+    	<script src="./showHide.js" type="text/javascript"></script>
+    </head>
+    <body>
+    
+        <!-- ********************************************************************** -->
+        
+        <div id="header">
+            <div class="container">
+                <a href="index.html"><h1>Intro to Computer Science &amp; Computer Programming</h1></a>
+            </div>
+        </div>
+        
+        <!-- ********************************************************************** -->
+        
+        <div id="mobile_menu_button"><a href="#" onclick="toggle('menu');">Menu &#9776;</a></div>
+
+        <!-- ********************************************************************** -->
+        <div id="menu" class="toggle">
+            <div class="container">
+                <ul>
+                    <li><a href="lesson1.html">Lesson 1</a></li>
+                    <li id="here">Lesson 2</li>
+                    <li><a href="lesson3.html">Lesson 3</a></li>
+                    <li><a href="lesson4.html">Lesson 4</a></li>
+                    <li><a href="lesson5.html">Lesson 5</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- ********************************************************************** -->
+        
+        <div id="contentwrapper">
+            <div class="container">
+                <h1>Lesson 2<br />
+                    Intro to Programming; Conditionals</h1>
+                <h2>Overview</h2>
+                <ul>
+                    <li><b>Computer Science</b>: Turing Machines, Turing Completeness, Output, Processing, Input</li>
+                    <li><b>Coding</b>: Python Output, Input, Numbers, Strings, Conditionals</li>
+                    <li><b>Culture</b>: Is this a robot? AI. Train-switch problem</li>
+                </ul>
+                <h2>Schedule</h2>
+                <ol>
+                    <li>Review of Week 1</li>
+                    <li>Alan Turing
+                    <ol>
+                        <li><a href="https://www.youtube.com/watch?v=dNRDvLACg5Q">Turing Machines Explained</a> [Computerphile, YouTube]</li>
+                        <li><a href="https://www.youtube.com/watch?v=RPQD7-AOjMI">Turing-Complete programming languages</a> [Computerphile, YouTube]</li>
+                    </ol></li>
+                    <li>Python Review: 
+                    <ol>
+                        <li>Output: <span class="ilc">print()</span> statement</li>
+                        <li>Assignment: <span class="ilc">=</span> ( &larr; )</li>
+                        <li>Python: Calculations – +, -, *, /, (), **</li>
+                        <li>Input: <span class="ilc">input()</span> and <span class="ilc">eval(input())</span></li>
+                    </ol>
+                    <li>Programs:
+                    <ol>
+                        <li><span class="ilc"><a href="javascript:toggle('tempconverter');">tempconverter.py</a></span>
+                            <div id="tempconverter" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Program: tempconverter.py</h1>
+                                    <p>Write a program that has the user enter a temperature in degrees Fahrenheight. Then print out the equivalent temperature in degrees Celsius, using the formula tempC = (5 / 9) * (tempF - 32).</p>
+                                </div>
+                            </div></li>
+                        <li><span class="ilc"><a href="javascript:toggle('tempconverter_personal');">tempconverter_personal.py</a></span>
+                            <div id="tempconverter_personal" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Program: tempconverter_personal.py</h1>
+                                    <p>Write a program that has the user enter first their name, and then a temperature in degrees Fahrenheight. Then print out a personalized message with the equivalent temperature in degrees Celsius, using the formula tempC = (5 / 9) * (tempF - 32).</p>
+                                </div>
+                            </div></li>
+                    </ol></li>
+                    <li>Break</li>
+                    <li>Python: Conditionals
+                    <ol>
+                        <li>Boolean expressions
+                        <ol>
+                            <li>Comparators: ==, !=, &lt;, &gt;, &lt;=, &gt;=</li>
+                            <li>Operators: <span class="ilc">and</span>, <span class="ilc">or</span>, <span class="ilc">not</span></li>
+                        </ol></li>
+                        <li><span class="ilc">if</span></li>
+                        <li><span class="ilc">if-else</span></li>
+                        <li><span class="ilc">if-elif-else</span></li>
+                    </ol></li>
+                    <li>Programs:
+                    <ol>
+                        <li><span class="ilc"><a href="javascript:toggle('good_day1');">good_day1.py</a></span>
+                            <div id="good_day1" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Program: good_day1.py</h1>
+                                    <p>Write a program that has the user enter the time in 24-hour format, where 1200 = noon. The program should then print out a 'Good morning!' greeting if it's before noon, and a 'Good day!' message if it's noon or after.</p>
+                                </div>
+                            </div></li>
+                        <li><span class="ilc"><a href="javascript:toggle('good_day2');">good_day2.py</a></span>
+                            <div id="good_day2" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Program: good_day2.py</h1>
+                                    <p>Write a program that has the user enter the time in 24-hour format, where 1200 = noon. The program should then print out a 'Good morning!', "Good afternoon!", or 'Good evening!' message depending on the time of day.</p>
+                                </div>
+                            </div></li>
+                        <li><span class="ilc"><a href="javascript:toggle('solid_liquid_gas');">solid_liquid_gas.py</a></span>
+                            <div id="solid_liquid_gas" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Program: solid_liquid_gas.py</h1>
+                                    <p>Write a program that asks the user to enter the current temperature, in degrees Fahrenheit. The program should then print out state of H<sub>2</sub>O at that temperature: "solid", "liquid", or "gas".</p>
+                                </div>
+                            </div></li>
+                        </ol></li>
+                    <li>Python: random numbers
+                        <ul>
+                            <li>The <span class="ilc">random</span> library</li>
+                        </ul></li>
+                    <li>Program:
+                        <ol>
+                            <li><a href="https://www.youtube.com/watch?v=xQZFWA2KDbw">The Sorting Hat</a> [YouTube]</li>
+                            <li><span class="ilc"><a href="javascript:toggle('the_sorting_hat');">the_sorting_hat.py</a></span>
+                            <div id="the_sorting_hat" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Program: the_sorting_hat.py</h1>
+                                    <p>Write a program that asks the user to press the [Enter] key (empty input) to be sorted into a random Hogwarts house&mdash;Gryffindor, Hufflepuff, Ravenclaw, or Slytherin&mdash;and then print out the result.</p>
+                                </div>
+                            </div></li>
+                        </ol></li>
+                    <li>Break</li>
+                    <li>Machines that make decisions &rarr; Robots</li>
+                        <ol>
+                            <li><a href="https://www.youtube.com/watch?v=g0TaYhjpOfo">Robots Falling Down</a> [Darpa Robotics Challenge, YouTube]</li>
+                            <li><a href="javascript:toggle('discquestions1');">Discussion: Is it a Robot?</a>
+                                <div id="discquestions1" class="toggle" style="display: none;">
+                                    <div class="problem">
+                                        <h1>Is it a Robot?</h1>
+                                        <p>Consider each of the following machines. Which ones would you consider a robot? Why?</p>
+                                        <ol>
+                                            <li>Automatic Coffee Machine</li>
+                                            <li>Digital Video Recorder</li>
+                                            <li>Antilock Braking System (<a href="https://en.wikipedia.org/wiki/Anti-lock_braking_system">ABS</a> [YouTube])</li>
+                                            <li>Automatic Ice Machine in freezer</li>
+                                            <li>this <a href="https://www.youtube.com/watch?v=8-DzBIe83mE">Roomba</a></li>
+                                            <li>Digital Thermostat</li>
+                                            <li>Automatic soap dispenser / towel dispenser</li>
+                                            <li>1908 Ford Model T</li>
+                                            <li>2018 Ford Focus</li>
+                                            <li>your smartphone</li>
+                                        </ol>
+                                    </div>
+                                </div></li>
+                        </ol></li>
+                    <li>Ethical Decision Making
+                        <ol>
+                            <li><a href="https://en.wikipedia.org/wiki/Trolley_problem">The Trolley Problem</a> [Wikipedia]</li>
+                            <li><a href="https://www.youtube.com/watch?v=ixIoDYVfKA0">The ethical dilemma of self-driving cars</a> [Patrick Lin, YouTube]</li>
+                            <li>Make some decisions of your own: <a href="http://moralmachine.mit.edu">The Moral Machine</a> [MIT]</li>
+                        </ol></li>
+                        
+                    <li>Homework: <span class="ilc"><a href="javascript:toggle('magic_8_ball');">magic_8_ball.py</a></span>
+                            <div id="magic_8_ball" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Program: magic_8_ball.py</h1>
+                                    <p>Write a program that uses a random number generator to simulate a Magic 8 Ball. When the program runs, the user will enter their question into the program, and then one of a number of random messages is printed out. Do some research to identify typical 8 Ball messages or come up with your own.</p>
+                                </div>
+                            </div></li>
+                </ol>
+                
+            </div><!--container -->
+            
+        </div>
+        
+        <!-- ********************************************************************** -->
+        
+        <div id="footer">
+            <div class="container">
+                <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0; width: 88px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Computer Science and Computer Programming</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.crashwhite.com/cs4a/" property="cc:attributionName" rel="cc:attributionURL">Richard White</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+            </div><!--container -->
+        </div>
+    </body>
+</html>

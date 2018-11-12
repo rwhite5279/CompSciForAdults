@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Intro to Computer Science and Computer Programming - Anagram Algorithms</title>
+    	<meta name="resource-type" content="document" />
+    	<meta name="author" content="richard white" />
+    	<meta name="description" content="Introduction to Computer Science and Computer Programming for Adults" />
+    	<meta name="keywords" content="Richard White, Computer Science, Computer Programming, Adult Education, Tutorial, How to" /><meta name="distribution" content="global" />
+    	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" type="text/css" href="styles_cs4a.css">
+    	<script src="./showHide.js" type="text/javascript"></script>
+    </head>
+    <body>
+    
+        <!-- ********************************************************************** -->
+        
+        <div id="header">
+            <div class="container">
+                <a href="index.html"><h1>Intro to Computer Science &amp; Computer Programming</h1></a>
+            </div>
+        </div>
+        
+        <!-- ********************************************************************** -->
+        
+        <div id="mobile_menu_button"><a href="javascript:toggle('menu');">Menu &#9776;</a></div>
+
+        <!-- ********************************************************************** -->
+        <div id="menu" class="toggle">
+            <div class="container">
+                <ul>
+                    <li><a href="lesson1.html">Lesson 1</a></li>
+                    <li><a href="lesson2.html">Lesson 2</a></li>
+                    <li><a href="lesson3.html">Lesson 3</a></li>
+                    <li><a href="lesson4.html">Lesson 4</a></li>
+                    <li><a href="lesson5.html">Lesson 5</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+        </div>
+  
+        <!-- ********************************************************************** -->
+        
+        <div id="contentwrapper">
+            <div class="container">
+                <h1>Anagram Algorithms</h1>
+                <p>Identifying whether two different strings of characters are anagrams of each other can be tricky.</p>
+                <p>Are these two strings anagrams of each other?</p>
+                <div class="code" style="width: 80%; display: block; margin: 0 auto;" >tapbgwbtrkoauetgntcqgbuwotrkrstjnyajnvnfvbazmrtxon
+                    
+nqxpytvbtnzbmktuanojwtcekbfrotnguwajtrrvtsgoanrabg</div>
+                
+                <p>To answer the anagram question, here are a couple of strategies (algorithms!) that you might consider using:</p>
+                
+                <h3>Algorithm #1</h3>
+                <ol>
+                    <li>As I cross off letters on one list, I'll go through the other list and cross off the same letter when I find it.</li>
+                    <li>If I ever get to the point where I can't cross off a letter from both lists, I'll know that the words aren't anagrams.</li>
+                </ol>
+                
+                <h3>Algorithm #2</h3>
+                <ol>
+                    <li>Alphabetize all the letters in the firstWord.</li>
+                    <li>Alphabetize all the letters in the secondWord.</li>
+                    <li>Compare the two alphabetized lists of letters. If they’re the same, they’re anagrams. Otherwise, they aren’t!</li>
+                </ol>
+
+       
+            </div><!--container -->
+            
+        </div>
+        
+        <!-- ********************************************************************** -->
+        
+        <div id="footer">
+            <div class="container">
+                <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0; width: 88px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Computer Science and Computer Programming</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.crashwhite.com/cs4a/" property="cc:attributionName" rel="cc:attributionURL">Richard White</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+            </div><!--container -->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Intro to Computer Science and Computer Programming - Lesson 3</title>
+    	<meta name="resource-type" content="document" />
+    	<meta name="author" content="richard white" />
+    	<meta name="description" content="Introduction to Computer Science and Computer Programming for Adults" />
+    	<meta name="keywords" content="Richard White, Computer Science, Computer Programming, Adult Education, Tutorial, How to" /><meta name="distribution" content="global" />
+    	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" type="text/css" href="styles_cs4a.css">
+    	<script src="./showHide.js" type="text/javascript"></script>
+    </head>
+    <body>
+    
+        <!-- ********************************************************************** -->
+        
+        <div id="header">
+            <div class="container">
+                <a href="index.html"><h1>Intro to Computer Science &amp; Computer Programming</h1></a>
+            </div>
+        </div>
+        
+        <!-- ********************************************************************** -->
+        
+        <div id="mobile_menu_button"><a href="#" onclick="toggle('menu');">Menu &#9776;</a></div>
+
+        <!-- ********************************************************************** -->
+        <div id="menu" class="toggle">
+            <div class="container">
+                <ul>
+                    <li><a href="lesson1.html">Lesson 1</a></li>
+                    <li><a href="lesson2.html">Lesson 2</a></li>
+                    <li id="here">Lesson 3</li>
+                    <li><a href="lesson4.html">Lesson 4</a></li>
+                    <li><a href="lesson5.html">Lesson 5</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- ********************************************************************** -->
+        
+        <div id="contentwrapper">
+            <div class="container">
+                <h1>Lesson 3<br />
+                    Loops; Algorithms</h1>
+                <h2>Overview</h2>
+                <ol>
+                    <li><b>Computer Science</b>: Algorithms</li>
+                    <li><b>Coding</b>: Conditional loops, writing Number Guessing Game</li>
+                    <li><b>Culture</b>: Is AI a threat? </li>
+                </ol>
+                <h2>Schedule</h2>
+                <ol>
+                    <li>Review of Week 2, <span class="ilc">magic_8_ball.py</span> programs</li>
+                    <li>Algorithms
+                        <ul>
+                            <li><a href="javascript:toggle('pb_and_j');">Peanut Butter and Jelly sandwiches</a>
+                            <div id="pb_and_j" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Making a sandwich</h1>
+                                    <p>A classic exercise that introduces one to the idea of a "series of steps used to solve a problem," or <i>algorithm</i>, is this one: "How would you give instructions to someone to make a peanut butter and jelly sandwich?"</p>
+                                    <p>Well? How would you?!</p>
+                                </div>
+                            </div></li>
+                            <li><a href="javascript:toggle('calculating_sums');">Calculating Sums</a>
+                            <div id="calculating_sums" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Add the numbers from 1 to 100</h1>
+                                    <p>One algorithm for find the sum of the numbers from 1 to 100 is to add them up: 1 + 2 = 3, and 3 + 4 = 7, and 7 + 5 = 12, ...</p>
+                                    <p>Identify <a href="calculating_sums.html">another algorithm</a> that arrives at the answer more quickly.</p>
+                                </div>
+                            </div></li>
+                            <li><a href="javascript:toggle('counting_words');">Counting Words</a>
+                            <div id="counting_words" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Count the number of words in a text</h1>
+                                    <p>It's easy for people to count words in a phrase, sentence, or paragraph. How would you get a computer to do it?</p>
+                                    <p>What step-by-step process would you use that would allow a computer to identify how many words there are in a text? <a href="counting_words.html">Here's one way</a>.</p>
+                                </div>
+                            </div></li>
+                            <li><a href="javascript:toggle('identifying_anagrams');">Identifying Anagrams</a>
+                            <div id="identifying_anagrams" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Identifying Anagram</h1>
+                                    <p>Two words or sequences of letters are <i>anagrams</i> of each other if they have the same quantity of the same letters in each word: <b>rat</b> is an anagram of <b>art</b>, and <b>peat</b> is an anagram of <b>tape</b>.</p>
+                                    <p>What are some strategies that you can think of that would help you identify two anagrams? It may help you clarify your strategy if you have an especially long pair of potential anagrams to work on:</p>
+                                    <p> <span class="ilc">tapbgwbtrkoauetgntcqgbuwotrkrstjnyajnvnfvbazmrtxon</span></p>
+                                    <p> <span class="ilc">nqxpytvbtnzbmktuanojwtcekbfrotnguwajtrrvtsgoanrabg</span></p>
+                                <p>You could try one of these <a href="anagram_algorithms.html">two strategies</a>.</p></div>
+                            </div></li>
+                        </ul></li>
+                    <li>Recursion
+                        <ul>
+                            <li>Demo: Hot chocolate, Matroyshka dolls</li>
+                            <li>Demo: Calculating Factorials</li>
+                            <li>Demo: <a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi">Towers of Hanoi</a> (and <a href="./code/towers_of_hanoi.py">Python code</a>)</li>
+                        </ul></li>
+                    <li>Iteration (Loops)</li>
+                    <li>Break</li>
+                    <li>Python: <span class="ilc">while</span> loop (conditional loop)
+                        <ul>
+                            <li><span class="ilc"><a href="javascript:toggle('magic_8_ball_v2');">magic_8_ball_v2.py</a></span>
+                            <div id="magic_8_ball_v2" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Program: magic_8_ball_v2.py</h1>
+                                    <p>Write a new version of your Magic 8-Ball program that asks the user if they'd like to ask the 8-Ball a question. If they do, have the user enter their question and provide a reply. Then ask them if they'd like to ask another question. Keep doing this until they answer the play-again question "No".</p>
+                                </div>
+                            </div></li>
+                        </ul></li>
+                    <li>Python: <a href="https://goo.gl/1QidxC">counting</a></li>
+                    <li>Programs: 
+                        <ol>
+                            <li><span class="ilc"><a href="javascript:toggle('number_guessing_game');">number_guessing_game.py</a></span>
+                            <div id="number_guessing_game" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Program: <span class="ilc">number_guessing_game.py</span></h1>
+                                    <p>This program makes up a secret (random) number between 1 and 10, and gives the user 3 tries to guess it. If the user hasn't
+guessed after three tries, then number is revealed.</p>
+                                </div>
+                            </div></li>
+                            <li><span class="ilc"><a href="javascript:toggle('random_walker1');">random_walker1.py</a></span>
+                            <div id="random_walker1" class="toggle" style="display: none;">
+                                <div class="problem">
+                                    <h1>Program: <span class="ilc">random_walker1.py<span></h1>
+                                    <p>This program models a "random walker" that starts at location 0,0, an intersection in the middle of a city laid out in square blocks. Each turn, the random walker moves one block to the north, east, west, or south, with the x-coordinate changing by 1 block or the y-coordinate changing by one block.</p>
+                                    <p>Print out the move number and the location of the random walker after every turn, and stop the walker when she has returned to the 0,0 starting position.</p>
+                                </div>
+                            </div></li>
+                        </ol></li>
+                    <li>Break</li>
+                    <li>Python: <span class="ilc">for</span> loop (unconditional loop)</li>
+                    <li>Demo: Elevator</li>
+                    <li>Artificial Intelligence
+                    <ol>
+                        <li>Skynet: <a href="https://www.youtube.com/watch?v=4DQsG3TKQ0I">Origin</a> (Terminator 2: Judgment Day, YouTube), <a href="https://youtu.be/_Wlsd9mljiU">Takes Over</a> (Terminator 3: Rise of the Machines)</li>
+                        <li>Ray Kurzweil: <a href="https://www.youtube.com/watch?v=1uIzS1uCOcE">The Singularity</a> (YouTube)</li>
+                        <li>How Machine Learning Works</li>
+                    </ol></li>
+                    <li>Video: AlphaGo [2017, 00:00 - 14:00]</li>
+                    <li>Homework<br />
+                        <ol>
+                            <li>Bring a few digital photos for use in class next week</li>
+                            <li>Your choice of:
+                                <ul>
+                                    <li>Watch <a href="https://youtu.be/963J_8HfvOU">Computer Science vs. Computer Programming</a> [YouTube, 30 min]</li>
+                                    <li>Find a current news article related to <i>Artificial Intelligence</i> or <i>Machine Learning</i> in the news and bring it in to share next week.</li>
+                                </ul></li>
+                            
+                        </ol></li>
+                </ol>
+            </div><!--container -->
+            
+        </div>
+        
+        <!-- ********************************************************************** -->
+        
+        <div id="footer">
+            <div class="container">
+                <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0; width: 88px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Computer Science and Computer Programming</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.crashwhite.com/cs4a/" property="cc:attributionName" rel="cc:attributionURL">Richard White</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+            </div><!--container -->
+        </div>
+    </body>
+</html>
